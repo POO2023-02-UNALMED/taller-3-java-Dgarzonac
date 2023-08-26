@@ -36,13 +36,6 @@ public class Control {
 			tv.canalDown();
 		}
 	}
-	public void setCanal(int canal)
-	{
-		if(tv !=null)
-		{
-			tv.setCanal( canal);
-		}
-	}
 	public void volumenUp()
 	{
 		if(tv !=null)
@@ -62,6 +55,13 @@ public class Control {
 		if(tv !=null)
 		{
 			tv.setVolumen( volumen);
+		}
+	}
+	public void setCanal(int canal)
+	{
+		if(tv !=null)
+		{
+			tv.setCanal( canal);
 		}
 	}
 	public Object getTv()
