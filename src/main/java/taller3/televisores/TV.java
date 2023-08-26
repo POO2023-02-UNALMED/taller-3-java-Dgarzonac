@@ -53,11 +53,23 @@ public class TV {
 	
 	public void volumenUp()
 	{
-		volumen++;
+		if (estado)
+		{
+			if(volumen<=7)
+			{
+				volumen++;;
+			}
+		}
 	}
 	public void volumenDown()
 	{
-		volumen--;
+		if (estado)
+		{
+			if(volumen>=0)
+			{
+				volumen--;
+			}
+		}		
 	}
 	public void setVolumen(int volumen)
 	{
