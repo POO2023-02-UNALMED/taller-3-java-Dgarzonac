@@ -82,7 +82,7 @@ public class TV {
 	{
 		this.control = control;
 	}
-	public void setNumTV(int numTV)
+	public static void setNumTV(int numTV)
 	{
 		TV.numTV = numTV;
 	}	
