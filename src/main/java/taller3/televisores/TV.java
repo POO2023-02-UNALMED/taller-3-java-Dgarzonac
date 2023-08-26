@@ -82,7 +82,10 @@ public class TV {
 	{
 		this.control = control;
 	}
-	
+	public void setNumTV(int numTV)
+	{
+		TV.numTV = numTV;
+	}	
 	public Marca getMarca()
 	{
 		return marca;
