@@ -24,7 +24,7 @@ public class TV {
 	{
 		if(estado)
 		{
-			if(canal>1 & canal<120)
+			if(canal<120)
 			{
 				canal++;
 			}
@@ -34,21 +34,34 @@ public class TV {
 	{
 		if(estado)
 		{
-			if(canal>=1 & canal<=120)
+			if(canal>=1)
 			{
 				canal--;
 			}
 		}
 	}
-	public void volumenUp()
+	public void setCanal(int canal)
 	{
-		if(estado)
+		if (estado)
 		{
-			if(canal>=0 & canal<=7)
+			if(canal>1 & canal<120)
 			{
-				volumen++;
+				this.canal = canal;
 			}
 		}
+	}
+	
+	public void volumenUp()
+	{
+		volumen++;
+	}
+	public void volumenDown()
+	{
+		volumen--;
+	}
+	public void setVolumen(int volumen)
+	{
+		this.volumen = volumen;
 	}
 	public void turnOn()
 	{
@@ -58,28 +71,13 @@ public class TV {
 	{
 		this.estado=false;
 	}
-	public void volumenDown()
-	{
-		volumen--;
-	}
 	public void setMarca(Marca marca)
 	{
 		this.marca = marca;
 	}
-	
-	public void setCanal(int canal)
-	{
-		this.canal = canal;
-	}
-	
 	public void setPrecio(int precio)
 	{
 		this.precio = precio;
-	}
-	
-	public void setVolumen(int volumen)
-	{
-		this.volumen = volumen;
 	}
 	public static void setNumTV(int numTV)
 	{
