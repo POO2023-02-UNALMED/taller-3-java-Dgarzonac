@@ -16,6 +16,10 @@ public class TV {
 		this.estado= estado;
 		numTV++;
 	}
+	public void setControl(Control control)
+	{
+		this.control = control;
+	}
 	public void canalUp()
 	{
 		if(estado)
@@ -76,11 +80,6 @@ public class TV {
 	public void setVolumen(int volumen)
 	{
 		this.volumen = volumen;
-	}
-	
-	public void setControl(Control control)
-	{
-		this.control = control;
 	}
 	public static void setNumTV(int numTV)
 	{
