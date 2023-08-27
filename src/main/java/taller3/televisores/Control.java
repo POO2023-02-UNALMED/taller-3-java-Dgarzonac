@@ -63,7 +63,7 @@ public class Control {
 		{
 			if(tv.volumen>=0 & tv.volumen<=7)
 			{
-				tv.volumen=volumen;
+				tv.setVolumen(volumen);
 			}
 		}
 	}
@@ -73,7 +73,7 @@ public class Control {
 		{
 			if(canal>=1 & canal<=120)
 			{
-				tv.canal=canal;
+				tv.setCanal(canal);
 			}
 		}
 	}
