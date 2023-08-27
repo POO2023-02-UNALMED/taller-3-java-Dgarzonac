@@ -61,7 +61,7 @@ public class Control {
 	{
 		if(tv.estado)
 		{
-			if(tv.volumen>0 & tv.volumen<7)
+			if(tv.volumen>=0 & tv.volumen<=7)
 			{
 				tv.volumen = volumen;
 			}
@@ -71,7 +71,7 @@ public class Control {
 	{
 		if (tv.estado)
 		{
-			if(canal>1 & canal<120)
+			if(canal>=1 & canal<=120)
 			{
 				tv.canal = canal;
 			}
