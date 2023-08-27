@@ -10,58 +10,71 @@ public class Control {
 	}
 	public void turnOn()
 	{
-		if(tv !=null)
-		{
-			tv.turnOn();
-		}
+		tv.turnOn();
 	}
 	public void turnOff()
 	{
-		if(tv !=null)
-		{
-			tv.turnOff();
-		}
+		tv.turnOff();
+
 	}
 	public void canalUp()
 	{
-		if(tv !=null)
+		if(tv.estado)
 		{
-			tv.canalUp();
+			if(tv.canal<120)
+			{
+				tv.canalUp();
+			}
 		}
 	}
 	public void canalDown()
 	{
-		if(tv !=null)
+		if(tv.estado)
 		{
-			tv.canalDown();
+			if(tv.canal>=1)
+			{
+				tv.canalDown();
+			}
 		}
 	}
 	public void volumenUp()
 	{
-		if(tv !=null)
+		if (tv.estado)
 		{
-			tv.volumenUp();
+			if(tv.volumen<=7)
+			{
+				tv.volumenUp();
+			}
 		}
 	}
 	public void volumenDown()
 	{
-		if(tv !=null)
+		if (tv.estado)
 		{
-			tv.volumenDown();
+			if(tv.volumen>=0)
+			{
+				tv.volumenDown();
+			}
 		}
 	}
 	public void setVolumen(int volumen)
 	{
-		if(tv !=null)
+		if(tv.estado)
 		{
-			tv.setVolumen( volumen);
+			if(tv.volumen>=0 & tv.volumen<=7)
+			{
+				tv.volumen = volumen;
+			}
 		}
 	}
 	public void setCanal(int canal)
 	{
-		if(tv !=null)
+		if (tv.estado)
 		{
-			tv.setCanal( canal);
+			if(canal>1 & canal<120)
+			{
+				tv.canal = canal;
+			}
 		}
 	}
 	public Object getTv()
