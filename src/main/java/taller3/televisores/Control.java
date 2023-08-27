@@ -10,11 +10,11 @@ public class Control {
 	}
 	public void turnOn()
 	{
-		tv.turnOn();
+		tv.estado=true;
 	}
 	public void turnOff()
 	{
-		tv.turnOff();
+		tv.estado=false;
 
 	}
 	public void canalUp()
@@ -23,7 +23,7 @@ public class Control {
 		{
 			if(tv.canal<120)
 			{
-				tv.canalUp();
+				tv.canal++;
 			}
 		}
 	}
@@ -33,7 +33,7 @@ public class Control {
 		{
 			if(tv.canal>=1)
 			{
-				tv.canalDown();
+				tv.canal--;
 			}
 		}
 	}
@@ -43,7 +43,7 @@ public class Control {
 		{
 			if(tv.volumen<=7)
 			{
-				tv.volumenUp();
+				tv.volumen++;
 			}
 		}
 	}
@@ -53,7 +53,7 @@ public class Control {
 		{
 			if(tv.volumen>=0)
 			{
-				tv.volumenDown();
+				tv.volumen--;
 			}
 		}
 	}
