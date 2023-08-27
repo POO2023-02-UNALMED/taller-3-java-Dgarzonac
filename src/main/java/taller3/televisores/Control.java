@@ -31,7 +31,7 @@ public class Control {
 	{
 		if(tv.estado)
 		{
-			if(tv.canal>=1)
+			if(tv.canal>1)
 			{
 				tv.canal--;
 			}
@@ -41,7 +41,7 @@ public class Control {
 	{
 		if (tv.estado)
 		{
-			if(tv.volumen<=7)
+			if(tv.volumen<7)
 			{
 				tv.volumen++;
 			}
